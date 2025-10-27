@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: outfit;
+        }
+
+        body {
+            background: #8bd3f7;
+            background: linear-gradient(64deg, rgba(139, 211, 247, 1) 0%, rgba(132, 198, 224, 1) 35%, rgba(255, 250, 212, 1) 81%, rgba(255, 246, 179, 1) 100%);
+        }
+
+        @font-face {
+            font-family: outfit;
+            src: url(./fonts/Outfit/Outfit-VariableFont_wght.ttf);
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            padding: 2rem;
+            margin-top: -1.5rem;
+            height: 100%;
+        }
+
+        section:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
+        .web-link ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .web-link ul li a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .web-app {
+            display: flex;
+            padding: 8px 35px;
+            gap: 15px;
+            background: transparent;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+
+        .web-app img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .star i {
+            font-size: 25px;
+            color: yellow;
+        }
+
+        .Big-txt-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .Big-txt-div .big-txt {
+            width: 500px;
+        }
+
+        .Big-txt-div .big-txt>label {
+            font-size: 5rem;
+            line-height: 1;
+            color: white;
+            font-weight: 500;
+        }
+
+        .abs-1 {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            top: 3%;
+            left: 25%;
+        }
+
+        .abs-1 img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .abs-1 p {
+            font-size: 13px;
+        }
+
+        .abs-1 img:nth-child(1) {
+            transform: rotate(180deg);
+        }
+
+        .abs-2 {
+            position: relative;
+            top: 30%;
+            left: 55%;
+            display: flex;
+            align-items: center;
+            width: 300px;
+            text-align: center;
+        }
+
+        .abs-2 p {
+            font-size: 13px;
+        }
+
+        .abs-2 img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .abs-2 img:nth-child(1) {
+            transform: rotate(180deg);
+        }
+
+        .cloth-div {
+            padding: 1rem;
+            width: 170px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            color: black;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .cloth-div-1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cloth-div-2 label {
+            font-size: 42px;
+            font-weight: 500;
+        }
+
+        .cloth-div-3 p {
+            text-transform: capitalize;
+        }
+
+        .bottom-images {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .bottom-bar {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 40px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #222;
+            padding: 0.8rem;
+        }
+
+        .bottom-images img {
+            height: 40px;
+            width: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .bottom-images label {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .bottom-btn button {
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            margin-right: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <nav>
+                <div class="brand-logo">
+                    <h4>Clean<span style="color: #fff;">Pro<i class="fa-solid fa-hands-bubbles"></i></span></h4>
+                </div>
+                <div class="web-link">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Recyclers</a></li>
+                    </ul>
+                </div>
+                <button class="web-app">
+                    <h4>Get the app</h4>
+                    <img src="images/playstore.webp" alt="">
+                </button>
+            </nav>
+        </section>
+        <section>
+            <div class="abs-divs">
+                <div class="abs-1">
+                    <img src="images/feather.png" alt="">
+                    <p>Tough stains? We'll make your clothes flawless!</p>
+                    <img src="images/feather.png" alt="">
+                </div>
+                <div class="abs-2">
+                    <img src="images/feather.png" alt="">
+                    <p>Tough stains? We'll make your clothes flawless!</p>
+                    <img src="images/feather.png" alt="">
+                </div>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="Big-txt-div">
+                <div class="big-txt">
+                    <label>The New Level of Care for Your Wardrobe</label>
+                </div>
+                <div class="cloth-div">
+                    <div class="cloth-div-1">
+                        <img src="images/clothes.png" alt="">
+                    </div>
+                    <div class="cloth-div-2">
+                        <label for="">2.7k+</label>
+                    </div>
+                    <div class="cloth-div-3 ">
+                        <p>just trust us - <br>We will take care of it</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="abs-divs">
+                <div class="abs-1">
+                    <img src="images/feather.png" alt="">
+                    <p>Tough stains? We'll make your clothes flawless!</p>
+                    <img src="images/feather.png" alt="">
+                </div>
+                <div class="abs-2">
+                    <img src="images/feather.png" alt="">
+                    <p>Tough stains? We'll make your clothes flawless!</p>
+                    <img src="images/feather.png" alt="">
+                </div>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="Big-txt-div">
+                <div class="big-txt">
+                    <label>The New Level of Care for Your Wardrobe</label>
+                </div>
+                <div class="cloth-div">
+                    <div class="cloth-div-1">
+                        <img src="images/clothes.png" alt="">
+                    </div>
+                    <div class="cloth-div-2">
+                        <label for="">2.7k+</label>
+                    </div>
+                    <div class="cloth-div-3 ">
+                        <p>just trust us - <br>We will take care of it</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="bottom-bar">
+        <div class="bottom-images">
+            <img src="images/user1.webp" alt="">
+            <img src="images/user2.webp" alt="">
+            <img src="images/user3.webp" alt="">
+            <img src="images/user4.webp" alt="">
+            <img src="images/user5.webp" alt="">
+            <label for="">5k+</label>
+        </div>
+        <div class="bottom-btn">
+            <button>Reserve Service</button>
+        </div>
+    </div>
+</body>
+
+</html>
