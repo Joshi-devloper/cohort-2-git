@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-position: center;
+}
+main section:hover {
+  flex-grow: 2;
+}
+main section:nth-child(1) {
+  background-image: url(../images/pikachu.jpg);
+}
+main section:nth-child(2) {
+  background-image: url(../images/premanadji.jpg);
+}
+main section:nth-child(3) {
+  background-image: url(../images/shinchan.jpg);
+}
+main section:nth-child(4) {
+  background-image: url(../images/giirlmarvel.jpg);
+}
+main section:nth-child(5) {
+  background-image: url(../images/Iron\ Man.jpeg);
+}/*# sourceMappingURL=pracscss.css.map */

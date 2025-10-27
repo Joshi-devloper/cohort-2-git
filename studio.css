@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: robomono;
+  src: url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: amatic;
+  src: url(./fonts/Amatic_SC/AmaticSC-Bold.ttf);
+}
+body {
+  font-family: robomono;
+  background-color: rgb(24, 24, 24);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0.5rem;
+}
+nav label {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .nav-links button {
+  padding: 20px 25px;
+  background-color: rgba(53, 53, 53, 0.6862745098);
+  border: none;
+  font-weight: 300;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+nav .nav-links button a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .nav-links button span {
+  border-radius: 50%;
+  font-family: robomono;
+  font-weight: 400;
+  padding: 5px;
+  color: black;
+  background-color: #CEBD63;
+}
+nav .nav-links button:nth-child(7) {
+  background-color: #CEBD63;
+}
+nav .nav-links button:nth-child(7) a {
+  color: black;
+  letter-spacing: 2px;
+  font-family: robomono;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+main .herosec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main .herosec .top img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .herosec .bottom {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+}
+main .herosec .bottom h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #BCBAB6;
+}
+main .herosec .bottom .bottom-txt {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: 1rem;
+}
+main .herosec .bottom .bottom-txt label {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .herosec .bottom .bottom-txt p {
+  font-size: 23px;
+  color: #7e7e7e;
+  line-height: 1.4;
+}
+main .herosec .bottom .bottom-txt button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  main {
+    align-items: center;
+    padding: 0.5rem;
+  }
+  main .herosec {
+    flex-direction: row;
+    max-width: 1900px;
+    border-radius: 5rem;
+  }
+  main .herosec .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main .herosec .bottom .bottom-txt {
+    gap: 1rem;
+  }
+  main .herosec .bottom .bottom-txt label {
+    font-weight: 200;
+    font-size: 3.7rem;
+  }
+  main .herosec .bottom .bottom-txt p {
+    font-size: 21px;
+  }
+}/*# sourceMappingURL=studio.css.map */

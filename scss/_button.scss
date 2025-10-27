@@ -1,0 +1,6 @@
+@mixin button-style($bgcolor,$fsize,$fcolor){
+    background-color: $bgcolor;
+    font-size: $fsize;
+    color: $fcolor;
+    padding: 10px 15px;
+}
